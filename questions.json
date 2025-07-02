@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "question": "Quale comando mostra la lista dei processi in esecuzione?",
+    "options": ["ls", "ps", "top", "pwd"],
+    "answer": 1
+  },
+  {
+    "id": 2,
+    "question": "In Debian, dove si trova la configurazione di rete?",
+    "options": ["/etc/network/interfaces", "/etc/resolv.conf", "/etc/fstab", "/etc/hosts"],
+    "answer": 0
+  },
+  {
+    "id": 3,
+    "question": "Quale shell è predefinita in Ubuntu?",
+    "options": ["zsh", "bash", "fish", "sh"],
+    "answer": 1
+  },
+  {
+    "id": 4,
+    "question": "Quale comando crea un archivio compresso .tar.gz?",
+    "options": ["zip", "gzip", "tar -czf", "compress"],
+    "answer": 2
+  },
+  {
+    "id": 5,
+    "question": "Quale file contiene le informazioni sui filesystem montati?",
+    "options": ["/etc/fstab", "/etc/passwd", "/etc/mtab", "/proc/mounts"],
+    "answer": 0
+  }
+]
