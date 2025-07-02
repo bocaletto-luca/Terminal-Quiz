@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Terminal Quiz Multiplayer – Python Linux CLI Quiz Game</title>
+  <meta name="description" content="Terminal Quiz Multiplayer is a lightweight real-time multiplayer quiz game for Linux terminals. Secure registration, global leaderboard, and easy JSON-based question customization." />
+  <meta name="keywords" content="terminal quiz, multiplayer quiz, Linux CLI trivia, Python quiz game, open source quiz, command line quiz" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Terminal Quiz Multiplayer – Python Linux CLI Quiz Game" />
+  <meta property="og:description" content="Lightweight real-time multiplayer quiz game running entirely in your Linux terminal. Register, compete, and climb the leaderboard!" />
+  <meta property="og:url" content="https://github.com/bocaletto-luca/terminal-quiz-multiplayer" />
+  <meta property="og:image" content="https://raw.githubusercontent.com/bocaletto-luca/terminal-quiz-multiplayer/main/preview.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Terminal Quiz Multiplayer" />
+  <meta name="twitter:description" content="Join a real-time, multiplayer Linux terminal quiz. Secure login, JSON-driven questions, and persistent leaderboard." />
+  <meta name="twitter:image" content="https://raw.githubusercontent.com/bocaletto-luca/terminal-quiz-multiplayer/main/preview.png" />
+
+  <link rel="canonical" href="https://github.com/bocaletto-luca/terminal-quiz-multiplayer" />
+  <style>
+    body { font-family: sans-serif; line-height: 1.6; margin:0; padding:0; color:#333; }
+    header, section, footer { padding: 2rem; max-width: 800px; margin: auto; }
+    header { background: #f5f5f5; text-align: center; }
+    h1 { margin-bottom: 0.5rem; }
+    .cta { display:inline-block; margin-top:1rem; padding:0.75rem 1.5rem; background:#007acc; color:#fff; text-decoration:none; border-radius:4px; }
+    ul { margin-left:1.2rem; }
+    footer { font-size:0.9rem; text-align:center; color:#666; }
+    a { color:#007acc; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Terminal Quiz Multiplayer</h1>
+    <p>A lightweight, real-time multiplayer quiz game for Linux terminals.</p>
+    <a class="cta" href="https://github.com/bocaletto-luca/terminal-quiz-multiplayer" target="_blank">View on GitHub</a>
+  </header>
+
+  <section id="features">
+    <h2>Features</h2>
+    <ul>
+      <li>Real-time multiplayer quiz over TCP (minimum 2 players).</li>
+      <li>Secure registration &amp; login with SHA-256 password hashing.</li>
+      <li>JSON-driven question database (`questions.json`).</li>
+      <li>Session scoring: +10 points correct, –5 points wrong or timeout.</li>
+      <li>Persistent global leaderboard (`data.json`) and in-game `<code>leaderboard</code>` command.</li>
+      <li>Zero external dependencies—runs on Python 3.6+ with standard library only.</li>
+    </ul>
+  </section>
+
+  <section id="installation">
+    <h2>Installation</h2>
+    <ol>
+      <li>Clone the repository:
+        <pre><code>git clone https://github.com/bocaletto-luca/terminal-quiz-multiplayer.git
+cd terminal-quiz-multiplayer</code></pre>
+      </li>
+      <li>Optionally make scripts executable:
+        <pre><code>chmod +x server.py client.py</code></pre>
+      </li>
+      <li>Ensure Python 3.6+ is installed on your Linux system.</li>
+    </ol>
+  </section>
+
+  <section id="usage">
+    <h2>Usage</h2>
+    <h3>Start the Server</h3>
+    <pre><code>./server.py</code></pre>
+    <p>The server listens on TCP port <code>5000</code> and automatically generates <code>data.json</code>.</p>
+
+    <h3>Launch Clients</h3>
+    <pre><code>./client.py</code></pre>
+    <p>In each terminal session, connect and use these commands:</p>
+    <ul>
+      <li><code>register</code> – Create a new user.</li>
+      <li><code>login</code> – Log in with existing credentials.</li>
+      <li><code>start</code> – Queue for a quiz session.</li>
+      <li><code>leaderboard</code> – View the global top 10.</li>
+      <li><code>exit</code> – Disconnect from the server.</li>
+    </ul>
+  </section>
+
+  <section id="customize">
+    <h2>Customizing Questions</h2>
+    <p>Edit <code>questions.json</code> to add or modify quiz items. Each entry must follow:</p>
+    <pre><code>{
+  "id":       6,
+  "question": "Your question text?",
+  "options":  ["Option A", "Option B", "Option C", "Option D"],
+  "answer":   2        // zero-based index of correct option
+}</code></pre>
+  </section>
+
+  <section id="contribute">
+    <h2>Contributing</h2>
+    <p>Contributions are welcome! To contribute:</p>
+    <ol>
+      <li>Fork the repository on GitHub.</li>
+      <li>Create a feature branch: <code>git checkout -b feature-name</code>.</li>
+      <li>Commit your changes: <code>git commit -m "Add feature"</code>.</li>
+      <li>Push and open a Pull Request.</li>
+    </ol>
+  </section>
+
+  <section id="license">
+    <h2>License</h2>
+    <p>This project is licensed under the <a href="https://www.gnu.org/licenses/gpl-3.0.en.html" target="_blank">GNU GPL v3.0</a>.</p>
+  </section>
+
+  <footer>
+    <p>© 2025 Luca Bocaletto · <a href="https://github.com/bocaletto-luca/terminal-quiz-multiplayer" target="_blank">GitHub Repository</a></p>
+  </footer>
+
+</body>
+</html>
