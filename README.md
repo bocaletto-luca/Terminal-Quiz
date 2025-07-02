@@ -1,4 +1,5 @@
-# terminal-quiz-multiplayer
+# Terminal Quiz Multiplayer
+#### Author: Bocaletto Luca
 
 A lightweight, multiplayer quiz game running entirely in a Linux terminal. Players connect to a TCP server, register or log in, and answer multiple-choice questions loaded from an external JSON file. Scores persist across sessions and a global leaderboard can be viewed in-game or via a simple HTTP endpoint.
 
