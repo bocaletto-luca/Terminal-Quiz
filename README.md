@@ -1,4 +1,5 @@
-# Terminal Quiz Multiplayer
+# Terminal Quiz 
+## Videogames Multiplayer
 #### Author: Bocaletto Luca
 #### OS: Linux
 
