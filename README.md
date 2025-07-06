@@ -1,7 +1,7 @@
-# Terminal Quiz 
-## Videogames Multiplayer
+# Terminal Quiz - Videogames Multiplayer
 #### Author: Bocaletto Luca
-#### OS: Linux
+
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue?style=for-the-badge&logo=gnu)](LICENSE) [![Language: Python](https://img.shields.io/badge/Language-Python-blue?style=for-the-badge&logo=python)](https://www.python.org/) [![Linux-Compatible](https://img.shields.io/badge/Linux-Compatible-blue?style=for-the-badge&logo=linux)](https://www.kernel.org/) [![Status: Complete](https://img.shields.io/badge/Status-Complete-brightgreen?style=for-the-badge)](https://github.com/bocaletto-luca/Directory-Monitor)
 
 A lightweight, multiplayer quiz game running entirely in a Linux terminal. Players connect to a TCP server, register or log in, and answer multiple-choice questions loaded from an external JSON file. Scores persist across sessions and a global leaderboard can be viewed in-game or via a simple HTTP endpoint.
 
